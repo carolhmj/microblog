@@ -1,0 +1,112 @@
+2018-12-01 10:25:22,864 ERROR: Exception on /index [GET] [in /home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/carol/projects/microblog/app/routes.py", line 22, in index
+    return render_template('index.html', title='Home Page', posts=posts)
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/carol/projects/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/carol/projects/microblog/app/templates/base.html", line 29, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/carol/projects/microblog/app/templates/index.html", line 6, in block "content"
+    {{ form.hidden_tag() }}
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2018-12-01 10:26:06,354 INFO: Microblog startup [in /home/carol/projects/microblog/app/__init__.py:47]
+2018-12-01 10:26:08,137 ERROR: Exception on /index [GET] [in /home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/carol/projects/microblog/app/routes.py", line 22, in index
+    return render_template('index.html', title='Home Page', posts=posts)
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/carol/projects/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/carol/projects/microblog/app/templates/base.html", line 29, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/carol/projects/microblog/app/templates/index.html", line 6, in block "content"
+    {{ form.hidden_tag() }}
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2019-01-04 20:23:05,963 INFO: Microblog startup [in /home/carol/projects/microblog/app/__init__.py:49]
+2019-01-04 20:35:53,122 INFO: Microblog startup [in /home/carol/projects/microblog/app/__init__.py:49]
+2019-01-04 20:38:00,650 INFO: Microblog startup [in /home/carol/projects/microblog/app/__init__.py:49]
+2019-01-04 20:38:18,666 INFO: Microblog startup [in /home/carol/projects/microblog/app/__init__.py:49]
+2019-01-04 20:38:55,289 ERROR: Exception on /reset_password_request [POST] [in /home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/carol/projects/microblog/app/routes.py", line 150, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/carol/projects/microblog/app/email.py", line 21, in send_password_reset_email
+    user=user, token=token))
+  File "/home/carol/projects/microblog/app/email.py", line 11, in send_email
+    mail.send(msg)
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask_mail.py", line 427, in send
+    connection.send(self)
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask_mail.py", line 181, in send
+    if message.has_bad_headers():
+  File "/home/carol/projects/microblog/venv/lib/python3.7/site-packages/flask_mail.py", line 400, in has_bad_headers
+    headers = [self.sender, self.reply_to] + self.recipients
+TypeError: can only concatenate list (not "str") to list
